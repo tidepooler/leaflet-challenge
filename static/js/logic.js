@@ -21,7 +21,7 @@ function createFeatures(earthquakeData) {
   }
 
   function circleColor(magnitude) {
-      if (magnitude < i) {
+      if (magnitude < 1) {
           return "#ccff33"
       }
       else if (magnitude < 2) {
