@@ -45,7 +45,7 @@ function createFeatures(earthquakeData) {
   // Run the onEachFeature function once for each piece of data in the array
   var earthquakes = L.geoJSON(earthquakeData, {
     pointToLayer: function (earthquakeData, latlng) {
-        return L. circle(latlng, {
+        return L.circle(latlng, {
             radius: radiusSize(earthquakeData.properties.mag),
             color: CircleColor(earthquakeData.properties.mag),
             fillOpacity: 1
