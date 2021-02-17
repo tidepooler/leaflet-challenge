@@ -45,8 +45,8 @@ function createFeatures(earthquakeData) {
   var earthquakes = L.geoJSON(earthquakeData, {
     pointToLayer: function (earthquakeData, latlng) {
         return L.circle(latlng, {
-            radius: radiusSize(earthquakeData.properties.mag),
-            color: CircleColor(earthquakeData.properties.mag),
+            radius: radiusSize(earthquakeData.properties.magnitude),
+            color: circleColor(earthquakeData.properties.magnitude),
             fillOpacity: 1
         });
     },
